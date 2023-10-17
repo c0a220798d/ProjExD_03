@@ -8,6 +8,7 @@ import pygame as pg
 WIDTH = 1600  # ゲームウィンドウの幅
 HEIGHT = 900  # ゲームウィンドウの高さ
 NUM_OF_BOMBS = 5  # 爆弾の数
+multibeam = []
 
 
 def check_bound(obj_rct: pg.Rect) -> tuple[bool, bool]:
@@ -110,7 +111,7 @@ class Score:
     """
     スコアに関するクラス
     """
-    def __init__(self, score:int):
+    def __init__(self, score:int):  #intは必要
         """
         スコアの初期化
         """
